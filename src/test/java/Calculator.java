@@ -19,6 +19,15 @@ public class Calculator {
     }
 
     private static String[] getSplit(String givenString) {
+        if (givenString.startsWith("//")){
+            Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(givenString);
+            if (matcher.matches()){
+                String delimiter = matcher.group(1);
+                String toSplit = matcher.group(2);
+                return toSplit.split(delimiter);
+            }
+            throw new RuntimeException("Wrong custom delimiter format");
+        }
         return givenString.split(",|\n");
     }
 }
