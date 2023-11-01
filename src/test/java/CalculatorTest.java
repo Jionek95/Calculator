@@ -28,14 +28,19 @@ public class CalculatorTest {
         Assertions.assertThat(Calculator.add("1,2,3\n4")).isEqualTo(10);
     }
 
-//    @Test
-//    public void returns(){
-//        Assertions.assertThat(Calculator.add())
-//    }
+    @Test
+    public void returns_sum_of_numbers_split_by_custom_delimiter(){
+        Assertions.assertThat(Calculator.add("//;\n1;2;3")).isEqualTo(6);
+    }
 
     @Test
     public void throws_exception_for_comma_next_to_newLine(){
         Assertions.assertThatThrownBy(() -> Calculator.add("1,\n2"))
                 .isInstanceOf(NumberFormatException.class);
     }
+
+    //    @Test
+//    public void returns(){
+//        Assertions.assertThat(Calculator.add())
+//    }
 }
