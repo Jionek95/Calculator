@@ -33,8 +33,9 @@ public class CalculatorTest {
 //        Assertions.assertThat(Calculator.add())
 //    }
 
-//    @Test
-//    public void returns(){
-//        Assertions.assertThat(Calculator.add())
-//    }
+    @Test
+    public void throws_exception_for_comma_next_to_newLine(){
+        Assertions.assertThatThrownBy(() -> Calculator.add("1,\n2"))
+                .isInstanceOf(NumberFormatException.class);
+    }
 }
