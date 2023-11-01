@@ -23,10 +23,10 @@ public class CalculatorTest {
         Assertions.assertThat(Calculator.add("1,2,3,4,5,6,7")).isEqualTo(28);
     }
 
-//    @Test
-//    public void returns_sum_of_numbers_separated_by_commas_and_newLines(){
-//        Assertions.assertThat(Calculator.add());
-//    }
+    @Test
+    public void returns_sum_of_numbers_separated_by_commas_and_newLines(){
+        Assertions.assertThat(Calculator.add("1,2,3\n4")).isEqualTo(10);
+    }
 
 //    @Test
 //    public void returns(){
