@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 public class CalculatorTest {
 
     @Test
-    public void returns(){
+    public void returns_zero_for_empty_String(){
         Assertions.assertThat(Calculator.add("")).isEqualTo(0);
-    }    
+    }
 
 //    @Test
 //    public void returns(){
