@@ -13,10 +13,10 @@ public class CalculatorTest {
         Assertions.assertThat(Calculator.add("6")).isEqualTo(6);
     }
 
-//    @Test
-//    public void returns(){
-//        Assertions.assertThat(Calculator.add())
-//    }
+    @Test
+    public void returns_sum_of_two_numbers(){
+        Assertions.assertThat(Calculator.add("3,9")).isEqualTo(12);
+    }
 
 //    @Test
 //    public void returns(){
