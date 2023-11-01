@@ -39,8 +39,10 @@ public class CalculatorTest {
                 .isInstanceOf(NumberFormatException.class);
     }
 
-    //    @Test
-//    public void returns(){
-//        Assertions.assertThat(Calculator.add())
-//    }
+    @Test
+    public void throws_exception_for_negatives(){
+        Assertions.assertThatThrownBy(() -> Calculator.add("1,-2,-3,4"))
+                .hasMessageContaining("negatives are not allowed")
+                .hasMessageContaining("-2 -3");
+    }
 }
