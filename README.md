@@ -12,4 +12,4 @@ testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
   5) returns_sum_of_numbers_separated_by_commas_and_newLines()
   6) throws_exception_for_comma_next_to_newLine()
   7) returns_sum_of_numbers_split_by_custom_delimiter()
-  8) 
+  8) throws_exception_for_negatives()
