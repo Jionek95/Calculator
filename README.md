@@ -1,6 +1,6 @@
 # A calculator program for given Strings. Made using Test Driven Developement
 #
-## Program written in java, usind Intellji  with gradle
+## Program written in java, usind Intellji  with gradle. For tests JUnit and AssertJ
 ## Added dependencies:
 testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
 
