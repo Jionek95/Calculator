@@ -10,4 +10,5 @@ testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
   3) returns_sum_of_two_numbers()
   4) returns_sum_of_any_numbers()
   5) returns_sum_of_numbers_separated_by_commas_and_newLines()
-  6) 
+  6) throws_exception_for_comma_next_to_newLine()
+  7) 
