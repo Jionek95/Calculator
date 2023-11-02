@@ -4,7 +4,7 @@
 ## Added dependencies:
 testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
 
-### Methods for the calculator:
+### Tested methods:
   1) returns_zero_for_empty_String()
   2) returns_number_for_one_number()
   3) returns_sum_of_two_numbers()
