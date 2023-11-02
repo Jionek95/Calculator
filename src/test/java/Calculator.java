@@ -34,8 +34,7 @@ public class Calculator {
     private static String[] getSplit(String givenString) {
         if (givenString.startsWith("//")){
             String[] parts = givenString.split("//;\n");
-            String[] integerStrings = parts[1].split(";");
-            return integerStrings;
+            return parts[1].split(";");
 
 //            Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(givenString);
 //            if (matcher.matches()){
