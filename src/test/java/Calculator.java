@@ -1,6 +1,4 @@
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 public class Calculator {
@@ -16,12 +14,12 @@ public class Calculator {
     }
 
     private static void negatives(List<Integer> numbers) {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringFromNegative = new StringBuilder();
         numbers.stream()
                 .filter(num->num<0)
-                .forEach(num->stringBuilder.append(num).append(" "));
-        if (!stringBuilder.toString().isEmpty()){
-            throw new RuntimeException("negatives are not allowed " + stringBuilder.toString());
+                .forEach(num->stringFromNegative.append(num).append(" "));
+        if (!stringFromNegative.isEmpty()){
+            throw new RuntimeException("negatives are not allowed " + stringFromNegative);
         }
     }
 
